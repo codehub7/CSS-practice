@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type="text/css" href="style.css">
+    <style>
+        p {
+            text-align: center;
+            color: red;
+        }
+        p#para-id{
+            font-size: 2em;
+        }
+        h4.para-class{
+            text-align: center;
+        }
+        h4:hover{
+            color: yellow;
+        }
+        a:first-child{
+            margin: 20px;
+            text-decoration: none;
+        }
+        a:nth-child(even){
+            font-style: italic;
+        }
+        p::first-letter{
+            font-size: xxx-large;
+        }
+        p::first-line{
+            letter-spacing: 5px;
+        }
+        p::selection{
+            background-color: white ;
+            color: black;
+        }
+        [title~=tree] {
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h4 class="para-class">What's Up???</h4>
+    <p id="para-id"> Hello world paragraph first show</p>
+    <p style="background-color: purple;"> This para will be used for inline style</p>
+
+    <nav>
+        <a href="">First</a>
+        <a href="">Second</a>
+        <a href="">Third</a>
+    </nav>
+</body>
+</html>

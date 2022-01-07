@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: blue;
+            /* background-image: repeating-radial-gradient(red 10%, green 40%, aqua 50%); */
+        }
+        nav{
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 20px auto ;
+        }
+
+        nav a{
+            text-decoration: none;
+            font-family: 'Sofia', sans-serif;
+            font-weight: bold;
+            position: relative;
+        }
+
+
+        a:after{
+            content:"";
+            position: absolute;
+            background-color: green;
+            height: 3px;
+            transition: 0.3s;
+            width:0;
+            left:0;
+            top: 25px;
+        }
+        a:hover{
+            color: red;
+        }
+
+        a:hover:after{
+            width: 100%;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Career</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </div>
+  </body>
+</html>

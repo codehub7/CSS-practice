@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .box{
+            background-color: orange;
+            margin: 20px;
+            padding: 20px
+        }
+        .parent{
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 5px;
+        }
+        .item{
+            padding: 40px;
+
+        }
+        .span-1{
+            background-color: red;
+            grid-column: 1 / 12;
+        }
+        .span-2{
+            background-color: green;
+            grid-column: 1 / 7;
+        }
+        .span-3{
+            background-color: blue;
+            grid: 6 / 10;
+        }
+        .span-4{
+            background-color: orangered;
+            grid-column: 10 / 13;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="parent blue">
+        <div class="box coral" contenteditable>
+            :)
+        </div>
+    </div> -->
+
+    <div class="parent">
+        <div class="item span-1">Span 1</div>
+        <div class="item span-2">Span 2</div>
+        <div class="item span-3">Span 3</div>
+        <div class="item span-4">Span 4</div>
+    </div>
+</body>
+</html>

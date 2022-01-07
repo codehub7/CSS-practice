@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .first{
+            display: flex;
+            flex-basis: 100%;
+            flex-direction: column;
+        }
+        .second{
+            display: flex;
+            flex-basis: 100%;
+        }
+        .item{
+            flex-grow: 1;
+            padding: 50px;
+        }
+        .a{
+            background-color: red;
+        }
+        .b{
+            background-color: green;
+        }
+        .c{
+            background-color: hotpink;
+        }
+        .d{
+            background-color: goldenrod;
+        }
+
+        @media (min-width: 768px) {
+            .first{
+                flex-direction: row;
+                flex-basis: 60%;
+                flex-wrap: wrap;
+            }
+            .second{
+                flex-basis: 40%;
+            }
+
+            .a{
+                flex-basis: 50%;
+            }
+            .b{
+                flex-basis: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="item a">A</div>
+            <div class="item b">B</div>
+            <div class="item d">D</div>
+        </div>
+        <div class="second">
+            <div class="item c">C</div>
+        </div>
+    </div>
+</body>
+</html>

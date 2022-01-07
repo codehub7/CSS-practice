@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+            grid-template-areas: 
+            "h h h h"
+            "l c c r"
+            "f f f f"; */
+            grid-template: auto 1fr auto / auto 1fr auto;
+
+        }
+        .header{
+            padding: 2rem;
+            background-color: green;
+            grid-column:  1 / 4;
+        }
+        
+        .left-side{
+            padding: 2rem;
+            background-color: purple;
+            /* grid-area: l; */
+            grid-column: 1 / 2;
+        }
+        .right-side{
+            padding: 2rem;
+            background-color: red;
+            /* grid-area: r; */
+            grid-column: 3 / 4;
+        }
+        .content{
+            padding: 2rem;
+            background-color: yellow;
+            /* grid-area: c; */
+            grid-column: 2 / 3;
+        }
+        .footer{
+            padding: 2rem;
+            background-color: pink;
+            /* grid-area: f; */
+            grid-column: 1 / 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item left-side">LeftSide</div>
+        <div class="item content">MainConent MainConent MainConent MaiainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent MainConent </div>
+        <div class="item right-side">RightSide</div>
+        <div class="item footer">Footer</div>
+    </div>
+</body>
+</html>
